@@ -1,0 +1,21 @@
+<link rel="import" href="bower_components/polymerfire/firebase-app.html">
+<link rel="import" href="my-login.html">
+
+<dom-module id="my-app">
+  <template>
+    <firebase-app
+      id="firebase"
+      auth-domain="monopoly-app.firebaseapp.com"
+      database-url="https://monopoly-app.firebaseio.com"
+      api-key="AIzaSyCVrqCBa1jSyIGKK1T62VEr2oJKpX3SWmE">
+    </firebase-app>
+
+    <my-login></my-login>
+
+  </template>
+  <script>
+    Polymer({
+      is: 'my-app'
+    });
+  </script>
+</dom-module>
